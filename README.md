@@ -11,7 +11,9 @@ Medical imaging ML engineer focused on reproducible MRI and CT pipelines, audit-
 2. [isles2022-3d-reproducible-pipeline](https://github.com/yskfuji/isles2022-3d-reproducible-pipeline)
    Reproducible 3D U-Net baseline for ischemic stroke lesion segmentation with threshold and postprocess sweeps.
 3. [rsna-ich-reproducible-pipeline](https://github.com/yskfuji/rsna-ich-reproducible-pipeline)
-   Reproducible intracranial hemorrhage classification workflow with group-split evaluation, calibration analysis, and a public FastAPI demo surface.
+   Reproducible intracranial hemorrhage classification workflow with group-split evaluation, calibration analysis, and a public FastAPI demo surface.\
+   Code: [dataset](https://github.com/yskfuji/rsna-ich-reproducible-pipeline/blob/main/core/pipeline/src/datasets/rsna_ich_dataset.py) · [training](https://github.com/yskfuji/rsna-ich-reproducible-pipeline/blob/main/core/pipeline/src/training/train_rsna_cnn2d_classifier.py) · [uncertainty evaluation](https://github.com/yskfuji/rsna-ich-reproducible-pipeline/blob/main/core/pipeline/tools/eval_rsna_uncertainty.py) · [evaluation notes](https://github.com/yskfuji/rsna-ich-reproducible-pipeline/blob/main/docs/evaluation_notes.md)\
+   Caveat: the headline numbers come from 1-epoch fine-tuning and are not performance on unseen studies; see the evaluation notes.
 
 ## What I care about
 
@@ -26,7 +28,9 @@ Medical imaging ML engineer focused on reproducible MRI and CT pipelines, audit-
 2. [isles2022-3d-reproducible-pipeline](https://github.com/yskfuji/isles2022-3d-reproducible-pipeline)
    3D U-Net ベースの脳梗塞病変セグメンテーション実装です。しきい値と後処理のスイープを含め、公開レビューしやすい構成にしています。
 3. [rsna-ich-reproducible-pipeline](https://github.com/yskfuji/rsna-ich-reproducible-pipeline)
-   RSNA ICH challenge 向けの頭蓋内出血分類実装です。group split 評価、校正解析、FastAPI デモ面を含みます。
+   RSNA ICH challenge 向けの頭蓋内出血の分類実装です。検査単位のグループ分割評価、校正解析、FastAPI のデモを含みます。\
+   コード：[データセット](https://github.com/yskfuji/rsna-ich-reproducible-pipeline/blob/main/core/pipeline/src/datasets/rsna_ich_dataset.py) · [学習](https://github.com/yskfuji/rsna-ich-reproducible-pipeline/blob/main/core/pipeline/src/training/train_rsna_cnn2d_classifier.py) · [不確実性の評価](https://github.com/yskfuji/rsna-ich-reproducible-pipeline/blob/main/core/pipeline/tools/eval_rsna_uncertainty.py) · [評価の注意点](https://github.com/yskfuji/rsna-ich-reproducible-pipeline/blob/main/docs/evaluation_notes_ja.md)\
+   注意：代表指標は1エポックの追加学習による値で、未知の検査に対する性能ではありません。詳しくは評価の注意点を読んでください。
 
 ## 関心のあるテーマ
 
